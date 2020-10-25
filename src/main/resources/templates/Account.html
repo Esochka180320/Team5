@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:sec="https://www.w3.org/1999/xhtml" xmlns:th="https://www.w3.org/1999/xhtml" xmlns:if>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href=" ">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+</head>
+<body>
+
+<section class="header">
+    <div class="container">
+        <div class="main-header">
+            <div class="logo">
+                    <a href="https://deveducation.com/ua/"><img alt="" src="11.png" class="home" style="height: 20px; width: 20px"></a>
+            </div>
+
+
+            <div class="box_1">
+                <select id="game">
+
+                </select>
+
+
+            </div>
+
+            <div class="box_1">
+                <h3 id="balanc">Balans</h3>
+
+
+            </div>
+
+            <div class="box_1">
+                <h3 id="acount"> acount</h3>
+
+            </div>
+
+
+            <div class="carting">
+                <ul>
+                    <li sec:authorize="isAuthenticated()"><a href="/logout"> EXIT</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="account">
+
+    <form  action="/chenge" method="post" name="form">
+
+        <label >Password</label>
+        <input type="password" name="password" placeholder="" required>
+        <label for="age">Age</label>
+        <input  type="password" id="age" name="age"
+               placeholder="">
+        <label for="hobby">hobby</label>
+        <input  type="text" id="hobby" name="hobby"
+                placeholder="">
+        <button class="btn-signup  ">Sign Up</button>
+    </form>
+
+    <form  action="/deposite" method="post" name="form">
+
+        <button class="btn-signup  ">Deposite</button>
+    </form>
+
+</section>
+
+
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <div class="footer-contant">
+                        <h3>WE ARE HERE</h3>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-tumblr"></i></a>
+                            <a href="#"><i class="fa fa-google"></i></a>
+
+                        </div>
+                        <div class="support-link">
+                            <ul>
+                                <li><a href="#">TELEGRAM</a></li>
+                                <li><a href="#">TWITTER</a></li>
+                                <li><a href="#">INSTAGRAM</a></li>
+                                <li><a href="#">VK</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/main.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+
+
+</html>
